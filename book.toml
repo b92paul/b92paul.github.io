@@ -5,9 +5,6 @@ multilingual = false
 src = "src"
 title = "PAUL HSIA"
 
-[build]
-build-dir = "docs"
-
 [output.html]
 mathjax-support = true
 cname = "www.paulhsia.tw"
