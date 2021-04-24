@@ -169,6 +169,19 @@
                         <h1 id="an-empty-site"><a class="header" href="#an-empty-site">An empty site</a></h1>
 <p>\[ \mu = \frac{1}{N} \sum_{i=0} x_i \]
 \[ \mu = \frac{1}{N} \sum_{i=0} {x_i}^2 \]</p>
+<ul>
+<li><a href="https://doc.rust-lang.org/book/">Test link to doc</a></li>
+</ul>
+<pre><code class="language-cpp">int main() {
+  puts(&quot;hello world!!&quot;);
+}
+</code></pre>
+<pre><code class="language-python">print(&quot;hello world!!&quot;)
+</code></pre>
+<pre><pre class="playground"><code class="language-rust">fn main() {
+  println!(&quot;hello world!!&quot;);
+}
+</code></pre></pre>
 
                     </main>
 
@@ -191,6 +204,21 @@
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         
