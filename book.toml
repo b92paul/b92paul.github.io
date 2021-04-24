@@ -7,3 +7,4 @@ title = "PAUL HSIA"
 
 [output.html]
 mathjax-support = true
+cname = "www.paulhsia.tw"
