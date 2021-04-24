@@ -1,5 +1,5 @@
 ---
-An empty site
+title: An empty site
 ---
 
 An empty site
