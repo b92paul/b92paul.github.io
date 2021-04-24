@@ -96,7 +96,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item affix "><a href="index.html">HOME</a></li><li class="chapter-item affix "><a href="podcast.html" class="active">Awesome podcasts and talks</a></li><li class="chapter-item affix "><a href="programming.html">Programming</a></li><li class="chapter-item affix "><a href="random.html">Random</a></li><li class="chapter-item affix "><a href="blog/index.html">Blog</a></li><li class="chapter-item "><a href="blog/2021-04-25-initial.html"><strong aria-hidden="true">1.</strong> 2021-04-25</a></li></ol>
+                <ol class="chapter"><li class="chapter-item affix "><a href="index.html">HOME</a></li><li class="chapter-item affix "><a href="learning.html">Learning</a></li><li class="chapter-item affix "><a href="podcast.html" class="active">Awesome podcasts and talks</a></li><li class="chapter-item affix "><a href="programming.html">Programming</a></li><li class="chapter-item affix "><a href="random.html">Random</a></li><li class="spacer"></li><li class="chapter-item affix "><a href="blog/index.html">Blog</a></li><li class="chapter-item affix "><a href="blog/2021-04-25-initial.html">2021-04-25</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -187,7 +187,7 @@
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="learning.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
@@ -205,7 +205,7 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="learning.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
@@ -219,6 +219,21 @@
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         
