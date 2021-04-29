@@ -164,6 +164,9 @@
 <ul>
 <li>
 <p><a href="https://www.cs.virginia.edu/%7Erobins/YouAndYourResearch.html" title="You and Your Research">You and Your Research</a>, by Richard Hamming</p>
+<p><em>Let me summarize. You've got to work on important problems.<br />
+I deny that it is all luck, but I admit there is a fair element of luck. I subscribe to Pasteur's &quot;Luck favors the prepared mind.&quot; I favor heavily what I did. Friday afternoons for years - great thoughts only - means that I committed 10% of my time trying to understand the bigger problems in the field, i.e. what was and what was not important.<br />
+I found in the early days I had believed 'this' and yet had spent all week marching in 'that' direction. It was kind of foolish. If I really believe the action is over there, why do I march in this direction? I either had to change my goal or change what I did. So I changed something I did and I marched in the direction I thought was important. It's that easy.</em></p>
 </li>
 <li>
 <p><a href="https://www.youtube.com/playlist?list=PL2FF649D0C4407B30" title="The Art of Doing Science and Engineering">The Art of Doing Science and Engineering</a>, by Richard Hamming</p>
@@ -209,6 +212,21 @@ In engineering, if you do not know what you are doing you should not be doing it
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         
